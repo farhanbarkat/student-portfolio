@@ -1,0 +1,58 @@
+.projects-section {
+    text-align: center;
+}
+
+/* Flexbox istemal karein taake cards side-by-side aayein */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap; /* Agar jagah kam ho toh cards neeche aa jayein */
+    justify-content: space-around; /* Cards ke darmiyan space */
+    margin-top: 20px;
+}
+
+.project-card {
+    width: 300px; /* Har card ki fix width */
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.project-card h3 {
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.project-link:hover {
+    background: #555;
+}
+
+/* === ANEES'S Media Query (Assignment Requirement) === */
+@media (max-width: 768px) {
+    /* Jab screen choti ho, toh cards poori width le lein */
+    .project-card {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
