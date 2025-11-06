@@ -179,3 +179,66 @@ footer {
         font-size: 1rem;
     }
 }
+
+
+Step 3: CSS Code (Data) - styles/style.css
+Yeh sab se zaroori hai. styles/style.css file ko kholein aur yeh CSS code file ke BILKUL AAKHIR MEIN (Farhan aur Anees ke code ke baad) add karein.
+
+
+
+.skills-section {
+    text-align: center;
+}
+
+.skills-section h3 {
+    margin-top: 30px;
+    color: #333;
+}
+
+/* Skills table ki styling */
+.skills-table {
+    width: 80%; /* Table ko thora chota rakhein */
+    margin: 20px auto; /* Table ko center karein */
+    border-collapse: collapse; /* Borders ko milayein */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.skills-table th, 
+.skills-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.skills-table th {
+    background-color: #f4f4f4; /* Header ka color */
+    font-weight: bold;
+}
+
+.skills-table td:last-child {
+    font-weight: bold;
+    color: #0056b3; /* Proficiency ka color */
+}
+
+/* Soft skills list ki styling */
+.soft-skills-list {
+    list-style: square;
+    display: inline-block; /* List ko center karega */
+    text-align: left;
+    margin-top: 15px;
+}
+
+.soft-skills-list li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+
+/* === ADEEL'S Media Query (Assignment Requirement) === */
+@media (max-width: 768px) {
+    /* Choti screen par table 100% width le le */
+    .skills-table {
+        width: 100%;
+        font-size: 0.9rem; /* Text chota karein */
+    }
+}
