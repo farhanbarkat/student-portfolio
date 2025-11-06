@@ -123,3 +123,59 @@ footer {
         margin: 5px 0;
     }
 }
+
+.profile-card {
+    text-align: center; /* Sab kuch center mein */
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Tasveer ko gol banaye ga */
+    border: 5px solid #333; /* Dark border */
+    margin-bottom: 20px;
+}
+
+.profile-card h3 {
+    color: #333;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-top: 30px; /* Sections ke darmiyan space */
+}
+
+.bio {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto; /* Bio ko center mein rakhe ga */
+}
+
+.education-list {
+    list-style: none; /* List ke dots hataye ga */
+    padding: 0;
+    text-align: left; /* Text ko left align kare ga */
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+.education-list li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* === MUJEEB'S Media Query (Assignment Requirement) === */
+/* Jab screen 600px se choti hogi */
+@media (max-width: 600px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .bio {
+        font-size: 1rem;
+    }
+}
